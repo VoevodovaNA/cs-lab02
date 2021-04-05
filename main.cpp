@@ -5,19 +5,23 @@ using namespace std;
 int main()
 {
     cout << "Enter A and B: ";
-    int a, b, max, min;
-    max=0;
-    min=0;
+    int a, b, max;
+    double min;
     cin >> a >> b;
     cout << a << " " << b;
     cout << "A + B = " << a + b << '\n';
     cout << "A - B = " << a - b << '\n';
     cout << "A * B = " << a * b << '\n';
     cout << "A / B = " << a / b << '\n';
-    if (a+b>max)
-        max=a+b;
-    else if (a*b>max)
+	
+	max=a+b;
+    if (a*b>max)
         max=a*b;
     cout << max << '\n';
+    
+	min=a-b;
+    if (a/b<min)
+    	min=a/b;
+    cout << min << '\n';
 return 0;
 }
