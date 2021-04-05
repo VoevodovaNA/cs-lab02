@@ -12,10 +12,15 @@ int main()
     cout << "A - B = " << a - b << '\n';
     cout << "A * B = " << a * b << '\n';
     cout << "A / B = " << a / b << '\n';
-    
+	
 	max=a+b;
     if (a*b>max)
         max=a*b;
     cout << max << '\n';
+    
+	min=a-b;
+    if (a/b<min)
+    	min=a/b;
+    cout << min << '\n';
 return 0;
 }
